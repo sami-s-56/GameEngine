@@ -11,4 +11,5 @@ int main()
     engine->GameLoop();
     delete(engine);
 
+    return 0;
 }

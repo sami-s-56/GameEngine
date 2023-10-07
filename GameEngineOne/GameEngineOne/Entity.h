@@ -4,12 +4,13 @@
 #define _ENTITY_
 
 #include <string>
+#include <list>
 
 class Component;
 
 class Entity
 {
-	List<Component*> compList;
+	std::list<Component*> compList;
 	std::string name;
 
 public:

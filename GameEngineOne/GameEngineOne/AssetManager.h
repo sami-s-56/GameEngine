@@ -6,6 +6,9 @@
 
 class AssetManager
 {
+
+public:
+
 	AssetManager();
 
 	~AssetManager();

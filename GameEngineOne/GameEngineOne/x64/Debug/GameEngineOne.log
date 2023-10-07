@@ -1,2 +1,10 @@
-﻿  Main.cpp
+﻿  Engine.cpp
+E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(282,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(295,30): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(297,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  RenderSystem.cpp
+E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(282,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(295,30): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(297,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
   GameEngineOne.vcxproj -> E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\x64\Debug\GameEngineOne.exe
