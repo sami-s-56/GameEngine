@@ -1,0 +1,11 @@
+{
+  "Engine": {
+    "DefaultFile": "GameLevelExample.json"
+  },
+  "RenderSystem": {
+    "Name": "Awesome Game",
+    "width": 1280,
+    "height": 720,
+    "fullscreen": false
+  }
+}
