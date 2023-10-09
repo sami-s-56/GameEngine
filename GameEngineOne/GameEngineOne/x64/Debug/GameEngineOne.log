@@ -1,10 +1,31 @@
-﻿  Engine.cpp
+﻿  Component.cpp
+  Engine.cpp
 E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(282,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(295,30): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(297,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  RenderSystem.cpp
+  Entity.cpp
+E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(282,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(295,30): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(297,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Main.cpp
+  Scene.cpp
+E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(282,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(295,30): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(297,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  SceneManager.cpp
 E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(282,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(295,30): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(297,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
   Generating Code...
   GameEngineOne.vcxproj -> E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\x64\Debug\GameEngineOne.exe
+  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\libmodplug-1.dll
+  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\libogg-0.dll
+  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\libopus-0.dll
+  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\libopusfile-0.dll
+  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\libtiff-5.dll
+  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\libwebp-7.dll
+  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\SDL2.dll
+  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\SDL2_image.dll
+  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\SDL2_mixer.dll
+  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\SDL2_ttf.dll
+         10 file(s) copied.

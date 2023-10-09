@@ -5,6 +5,7 @@
 
 #include <string>
 #include <list>
+#include "json.hpp"
 
 class Component;
 
@@ -25,7 +26,7 @@ public:
 
 	void Update();
 
-	void Load();
+	void Load(json::JSON& json_Object);
 
 	void AddComponent(Component* _component);
 

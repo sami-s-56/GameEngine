@@ -4,16 +4,18 @@
 #define _SCENE_
 
 #include <list>
+#include <string> 
 
 class Entity;
 
 class Scene
 {
+	std::string Name;
 	std::list<Entity*> entityList;
 
 public:
 
-	Scene();
+	Scene(std::string& name);
 
 	~Scene();
 

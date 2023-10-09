@@ -3,6 +3,7 @@
 #ifndef _COMP_
 #define _COMP_
 
+
 class Component
 {
 	int id;

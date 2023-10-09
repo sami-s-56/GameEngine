@@ -13,6 +13,9 @@ private:
 	int width, height;
 	bool fullScreen;
 
+	class SDL_Window* window = nullptr;
+	class SDL_Renderer* renderer = nullptr;
+
 public:
 	RenderSystem();
 
