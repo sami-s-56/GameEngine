@@ -3,6 +3,7 @@
 #ifndef _SCENE_
 #define _SCENE_
 
+#include "json.hpp";
 #include <list>
 #include <string> 
 
@@ -25,7 +26,7 @@ public:
 
 	void Update();
 
-	void Load();
+	void Load(json::JSON obj);
 
 	void AddEntity(Entity*& _entity);
 

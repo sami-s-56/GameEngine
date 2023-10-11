@@ -42,17 +42,17 @@ void Scene::Update()
 	}
 }
 
-void Scene::Load()
+void Scene::Load(json::JSON obj)
 {
 	std::cout << "Scene" << Name << "Load()" << std::endl;
 
-	std::ifstream inputStream(Engine::GetEngine()->GetEngineFileName());
+	/*std::ifstream inputStream(Engine::GetEngine()->GetEngineFileName());
 	std::string str((std::istreambuf_iterator<char>(inputStream)), std::istreambuf_iterator<char>());
-	json::JSON document = json::JSON::Load(str);
+	json::JSON document = json::JSON::Load(str);*/
 
-	if (document.hasKey("Entities")) 
+	if (obj.hasKey("Entities")) 
 	{
-		json::JSON json_subobjects = document["Entities"];
+		json::JSON json_subobjects = obj["Entities"];
 			for (auto& json_subobject : json_subobjects.ArrayRange())
 			{
 				Entity* e = new Entity(json_subobject["Name"].ToString());

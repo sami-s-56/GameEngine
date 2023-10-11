@@ -1,7 +1,6 @@
 #include "SceneManager.h"
 #include "Engine.h"
 #include "Scene.h"
-#include "json.hpp"
 #include <fstream>
 
 SceneManager::SceneManager()
@@ -29,16 +28,28 @@ void SceneManager::Initialize()
 	
 	std::string sName;
 
-	if (document.hasKey("name"))
+	if (document.hasKey("SceneManager"))
 	{
-		sName = document["name"].ToString();
+		std::cout << "Scene Manager Found!" << std::endl;
+
+		json::JSON json_subobjects = document["SceneManager"];
+
+		for (auto& json_subobject : json_subobjects.ArrayRange())
+		{
+			if (json_subobject.hasKey("name"))
+			{
+				sName = json_subobject["name"].ToString();
+
+				Scene* scene = new Scene(sName);
+
+				AddScene(scene);
+
+				LoadScene(scene, json_subobject);
+			}
+		}
 	}
 
-	Scene* scene = new Scene(sName);
-
-	AddScene(scene);
-
-	LoadScene(scene);
+	
 }
 
 void SceneManager::Destroy()
@@ -64,7 +75,7 @@ void SceneManager::RemoveScene(Scene*& _scene)
 	sceneList.remove(_scene);
 }
 
-void SceneManager::LoadScene(Scene*& _scene)
+void SceneManager::LoadScene(Scene*& _scene, json::JSON& obj)
 {
-	_scene->Load();
+	_scene->Load(obj);
 }
