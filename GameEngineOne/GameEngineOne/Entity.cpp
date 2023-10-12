@@ -4,12 +4,10 @@
 Entity::Entity(const std::string _name) : name(_name)
 {
 	std::cout << "Entity" << name << "Constructor()" << std::endl;
-	Initialize();
 }
 
 Entity::~Entity()
 {
-	Destroy();
 	std::cout << "Entity" << name << "Destructor()" << std::endl;
 	for (Component* c : compList)
 	{
@@ -21,11 +19,22 @@ Entity::~Entity()
 void Entity::Initialize()
 {
 	std::cout << "Entity" << name << "Initialize()" << std::endl;
+
+	for (Component* c : compList)
+	{
+		c->Initialize();
+	}
 }
 
 void Entity::Destroy()
 {
 	std::cout << "Entity" << name << "Destroy()" << std::endl;
+
+
+	for (Component* c : compList)
+	{
+		c->Destroy();
+	}
 }
 
 void Entity::Update()

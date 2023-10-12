@@ -7,12 +7,12 @@ SceneManager::SceneManager()
 {
 	std::cout << "Scene Manager Constructor" << std::endl;
 
-	Initialize();
+	Load();
 }
 
 SceneManager::~SceneManager()
 {
-	Destroy();
+
 	std::cout << "Scene Manager Destructor";
 }
 
@@ -20,12 +20,52 @@ void SceneManager::Initialize()
 {
 	std::cout << "Scene Manager Initialize()" << std::endl;
 
-	sceneList = std::list<Scene*>();
+	for (Scene* s : sceneList)
+	{
+		s->Initialize();
+	}
+
 	
+}
+
+void SceneManager::Destroy()
+{
+	std::cout << "Scene Manager Destroy" << std::endl;
+
+	for (Scene* s : sceneList)
+	{
+		s->Destroy();
+	}
+}
+
+void SceneManager::Update()
+{
+	std::cout << "Scene Manager Update()" << std::endl;
+
+	for (Scene* s : sceneList)
+	{
+		s->Update();
+	}
+}
+
+void SceneManager::AddScene(Scene*& _scene)
+{
+	sceneList.push_back(_scene);
+}
+
+void SceneManager::RemoveScene(Scene*& _scene)
+{
+	sceneList.remove(_scene);
+}
+
+void SceneManager::Load()
+{
+	sceneList = std::list<Scene*>();
+
 	std::ifstream inputStream(Engine::GetEngine()->GetEngineFileName());
 	std::string str((std::istreambuf_iterator<char>(inputStream)), std::istreambuf_iterator<char>());
 	json::JSON document = json::JSON::Load(str);
-	
+
 	std::string sName;
 
 	if (document.hasKey("SceneManager"))
@@ -43,39 +83,13 @@ void SceneManager::Initialize()
 				Scene* scene = new Scene(sName);
 
 				AddScene(scene);
-
-				LoadScene(scene, json_subobject);
+				
+				scene->Load(json_subobject);
 			}
 		}
 	}
 
+	Initialize();
+
 	
-}
-
-void SceneManager::Destroy()
-{
-	std::cout << "Scene Manager Destroy" << std::endl;
-}
-
-void SceneManager::Update()
-{
-	for (Scene* s : sceneList)
-	{
-		s->Update();
-	}
-}
-
-void SceneManager::AddScene(Scene*& _scene)
-{
-	sceneList.push_back(_scene);
-}
-
-void SceneManager::RemoveScene(Scene*& _scene)
-{
-	sceneList.remove(_scene);
-}
-
-void SceneManager::LoadScene(Scene*& _scene, json::JSON& obj)
-{
-	_scene->Load(obj);
 }

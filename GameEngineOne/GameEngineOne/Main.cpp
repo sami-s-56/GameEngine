@@ -13,6 +13,7 @@ int main()
     Engine* engine = new Engine();
     engine->Load();
     engine->GameLoop();
+    engine->Destroy();
     delete(engine);
 
     return 0;

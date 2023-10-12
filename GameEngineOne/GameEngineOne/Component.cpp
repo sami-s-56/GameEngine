@@ -4,12 +4,12 @@
 Component::Component(int _id) : id(_id)
 {
 	std::cout << "Component " << id << "Constructor";
-	Initialize();
+	
 }
 
 Component::~Component()
 {
-	Destroy();
+	
 	std::cout << "Component " << id << "Destructor";
 }
 

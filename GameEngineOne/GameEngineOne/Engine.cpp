@@ -20,21 +20,20 @@ Engine::Engine()
 	{
 		delete(this);
 	}
-	
-	
-	Initialize();
 
+	Initialize();
+	
 	sceneMgr = new SceneManager();
 	assetMgr = new AssetManager();
 	renderSys = new RenderSystem();
 	inputMgr = new InputManager();
 
+
 }
 
 Engine::~Engine()
 {
-	Destroy();
-
+	
 	delete(sceneMgr);
 	delete(renderSys);
 	delete(assetMgr);
@@ -70,6 +69,11 @@ void Engine::Initialize()
 void Engine::Destroy()
 {
 	std::cout << "Engine Destroy()" << std::endl;
+
+	sceneMgr->Destroy();
+	renderSys->Destroy();
+	assetMgr->Destroy();
+	inputMgr->Destroy();
 }
 
 void Engine::GameLoop()
@@ -90,9 +94,6 @@ void Engine::Load()
 {
 	std::cout << "Engine Load()" << std::endl;
 
-	assetMgr->Load();
-	renderSys->Load();
-	inputMgr->Load();
 }
 
 std::string Engine::GetEngineFileName() const

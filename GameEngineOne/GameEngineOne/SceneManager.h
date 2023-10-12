@@ -5,7 +5,6 @@
 
 #include <iostream>
 #include <list>
-#include "json.hpp"
 
 
 class Scene;
@@ -33,7 +32,7 @@ public:
 
 	void RemoveScene(Scene*& _scene);
 
-	void LoadScene(Scene*& _scene, json::JSON& obj);
+	void Load();
 
 };
 
