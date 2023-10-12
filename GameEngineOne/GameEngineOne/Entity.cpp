@@ -39,6 +39,8 @@ void Entity::Destroy()
 
 void Entity::Update()
 {
+	std::cout << "Entity" << name << "Update()" << std::endl;
+
 	for (Component* c : compList)
 	{
 		c->Update();

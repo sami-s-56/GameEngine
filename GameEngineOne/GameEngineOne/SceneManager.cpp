@@ -12,8 +12,13 @@ SceneManager::SceneManager()
 
 SceneManager::~SceneManager()
 {
+	std::cout << "Scene Manager Destructor" << std::endl;
 
-	std::cout << "Scene Manager Destructor";
+	for (Scene* s : sceneList)
+	{
+		delete(s);
+	}
+	sceneList.clear();
 }
 
 void SceneManager::Initialize()
@@ -60,6 +65,8 @@ void SceneManager::RemoveScene(Scene*& _scene)
 
 void SceneManager::Load()
 {
+	std::cout << "Scene Manager Load()" << std::endl;
+
 	sceneList = std::list<Scene*>();
 
 	std::ifstream inputStream(Engine::GetEngine()->GetEngineFileName());

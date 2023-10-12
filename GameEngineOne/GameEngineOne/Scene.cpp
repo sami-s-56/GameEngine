@@ -52,7 +52,7 @@ void Scene::Update()
 	}
 }
 
-void Scene::Load(json::JSON obj)
+void Scene::Load(json::JSON& obj)
 {
 	std::cout << "Scene" << Name << "Load()" << std::endl;
 

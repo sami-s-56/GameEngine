@@ -9,7 +9,6 @@ AssetManager::AssetManager()
 
 AssetManager::~AssetManager()
 {
-	Destroy();
 	std::cout << "Asset Manager Destructor" << std::endl;
 }
 

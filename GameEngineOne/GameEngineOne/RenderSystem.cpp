@@ -12,7 +12,6 @@ RenderSystem::RenderSystem()
 
 RenderSystem::~RenderSystem()
 {
-	Destroy();
 	std::cout << "Render System Destructor" << std::endl;
 }
 

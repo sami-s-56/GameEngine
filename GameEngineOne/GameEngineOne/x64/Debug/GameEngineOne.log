@@ -1,22 +1,17 @@
-﻿  Engine.cpp
-E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(282,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(295,30): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(297,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  SceneManager.cpp
-E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\Scene.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(282,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(295,30): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\GameEngineOne\json.hpp(297,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
-  GameEngineOne.vcxproj -> E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\x64\Debug\GameEngineOne.exe
-  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\libmodplug-1.dll
-  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\libogg-0.dll
-  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\libopus-0.dll
-  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\libopusfile-0.dll
-  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\libtiff-5.dll
-  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\libwebp-7.dll
-  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\SDL2.dll
-  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\SDL2_image.dll
-  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\SDL2_mixer.dll
-  E:\_SHERIDAN_\GameArchitecture\Lab2\GameEngine\GameEngineOne\SDL\lib\x64\SDL2_ttf.dll
+﻿  SceneManager.cpp
+D:\GameArcitecture\Labs\GameEngine\GameEngineOne\GameEngineOne\Scene.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\GameArcitecture\Labs\GameEngine\GameEngineOne\GameEngineOne\json.hpp(282,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\GameArcitecture\Labs\GameEngine\GameEngineOne\GameEngineOne\json.hpp(295,30): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\GameArcitecture\Labs\GameEngine\GameEngineOne\GameEngineOne\json.hpp(297,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  GameEngineOne.vcxproj -> D:\GameArcitecture\Labs\GameEngine\GameEngineOne\x64\Debug\GameEngineOne.exe
+  D:\GameArcitecture\Labs\GameEngine\GameEngineOne\SDL\lib\x64\libmodplug-1.dll
+  D:\GameArcitecture\Labs\GameEngine\GameEngineOne\SDL\lib\x64\libogg-0.dll
+  D:\GameArcitecture\Labs\GameEngine\GameEngineOne\SDL\lib\x64\libopus-0.dll
+  D:\GameArcitecture\Labs\GameEngine\GameEngineOne\SDL\lib\x64\libopusfile-0.dll
+  D:\GameArcitecture\Labs\GameEngine\GameEngineOne\SDL\lib\x64\libtiff-5.dll
+  D:\GameArcitecture\Labs\GameEngine\GameEngineOne\SDL\lib\x64\libwebp-7.dll
+  D:\GameArcitecture\Labs\GameEngine\GameEngineOne\SDL\lib\x64\SDL2.dll
+  D:\GameArcitecture\Labs\GameEngine\GameEngineOne\SDL\lib\x64\SDL2_image.dll
+  D:\GameArcitecture\Labs\GameEngine\GameEngineOne\SDL\lib\x64\SDL2_mixer.dll
+  D:\GameArcitecture\Labs\GameEngine\GameEngineOne\SDL\lib\x64\SDL2_ttf.dll
          10 file(s) copied.

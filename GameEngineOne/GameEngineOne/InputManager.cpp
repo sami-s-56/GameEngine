@@ -9,7 +9,6 @@ InputManager::InputManager()
 
 InputManager::~InputManager()
 {
-	Destroy();
 	std::cout << "Input Manager Destructor" << std::endl;
 }
 

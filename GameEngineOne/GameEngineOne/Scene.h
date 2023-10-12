@@ -26,7 +26,7 @@ public:
 
 	void Update();
 
-	void Load(json::JSON obj);
+	void Load(json::JSON& obj);
 
 	void AddEntity(Entity*& _entity);
 
